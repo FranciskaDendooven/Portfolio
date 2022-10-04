@@ -1,6 +1,6 @@
 <script setup>
     import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-    import { Head } from '@inertiajs/inertia-vue3';
+    import { Head, Link } from '@inertiajs/inertia-vue3';
     </script>
     
     <template>
@@ -15,8 +15,13 @@
     
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    Table of skills
+                    <div class="flex justify-end m-2 p-2">
+                        <Link
+                        href="/skills/create"
+                        class="px-4 py-2 bg-indigo-500 hover:bg-indigo-700 text-white rounded-md"
+                        >New Skill</Link>
+                    </div>
                 </div>
             </div>
         </AuthenticatedLayout>
-    </template>
+    </template> 
