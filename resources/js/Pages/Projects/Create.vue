@@ -14,11 +14,11 @@
             name: '',
             image: null,
             skill_id: '',
-            project_url: '',
+            project_url: null,
         });
 
         const submit = () => {
-            form.post(route('skills.store'));
+            form.post(route('projects.store'));
         };
 
     </script>
@@ -39,11 +39,12 @@
                     <form class="p-4" @submit.prevent="submit">
 
                         <div>
+                            <InputLabel for="skill_id" value="Skill" />
                             <select
                             v-model="form.skill_id"
                             id="skill_id"
                             name="skill_id"
-                            class="">
+                            class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                                 <option v-for="skill in skills" :key="skill.id" :value="skill.id">
                                     {{skill.name}}
                                 </option>
@@ -58,7 +59,7 @@
 
                         <div>
                             <InputLabel for="project_url" value="URL" />
-                            <TextInput id="project_url" type="text" class="mt-1 block w-full" v-model="form.project_url" required autocomplete="project_url" />
+                            <TextInput id="project_url" type="text" class="mt-1 block w-full" v-model="form.project_url" autocomplete="project_url" />
                             <InputError class="mt-2" :message="form.errors.project_url" />
                         </div>
 

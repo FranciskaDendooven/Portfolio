@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Inertia\Inertia;
 use App\Models\Skill;
+use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ProjectController extends Controller
 {
@@ -35,9 +37,28 @@ class ProjectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'skill_id' => ['required'],
+            'name' => ['required', 'min:3'],
+            'image' => ['required', 'image'],
+        ]);
+
+        if ($request->hasFile('image')){
+            $image = $request->file('image')->store('projects');
+            Project::create([
+                'skill_id' => $request->skill_id,
+                'name' => $request->name,
+                'image' => $image,
+                'project_url' => $request->project_url,
+            ]);
+
+            return Redirect::route('projects.index');
+        }
+
+        return Redirect::back();
     }
 
     /**
