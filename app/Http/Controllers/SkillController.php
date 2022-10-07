@@ -6,6 +6,7 @@ use Inertia\Inertia;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 use App\Http\Resources\SkillResource;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
 
 class SkillController extends Controller
@@ -58,25 +59,14 @@ class SkillController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Skill $skill)
     {
-        //
+        return inertia::render('Skills/Edit', compact('skill'));
     }
 
     /**
@@ -84,11 +74,28 @@ class SkillController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,  Skill $skill)
     {
-        //
+        $image = $skill->image;
+
+        $request->validate([
+            'name' => ['required', 'min:3'],
+        ]);
+
+        if($request->hasFile('image')){
+            Storage::delete($skill->image);
+            $image = $request->file('image')->store('skills');
+        }
+
+        $skill->update([
+            'name' => $request->name,
+            'image' => $image
+        ]);
+
+        return Redirect::route('skills.index');
+
     }
 
     /**
@@ -97,8 +104,11 @@ class SkillController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Skill $skill)
     {
-        //
+        Storage::delete($skill->image);
+        $skill->delete();
+
+        return Redirect::back();
     }
 }

@@ -6,6 +6,8 @@ use Inertia\Inertia;
 use App\Models\Skill;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use App\Http\Resources\ProjectResource;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
 
 class ProjectController extends Controller
@@ -17,7 +19,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Projects/Index');
+        $projects = ProjectResource::collection(Project::with('skill')->get());
+        return Inertia::render('Projects/Index', compact('projects'));
     }
 
     /**
@@ -62,25 +65,15 @@ class ProjectController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Project $project)
     {
-        //
+        $skills = Skill::all();
+        return Inertia::render('Projects/Edit', compact('project', 'skills'));   
     }
 
     /**
@@ -90,9 +83,27 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Project $project)
     {
-        //
+        $image = $project->image;
+
+        $request->validate([
+            'skill_id' => ['required'],
+            'name' => ['required', 'min:3'],
+        ]);
+
+        if($request->hasfile('image')){
+            Storage::delete($project->image);
+            $image = $request->file('image')->store('projects');
+        }
+
+        $project->update([
+            'skill_id' => $request->skill_id,
+            'name' => $request->name,
+            'project_url' => $request->project_url,
+            'image' => $image, 
+        ]);
+        return Redirect::route('projects.index');
     }
 
     /**
@@ -101,8 +112,10 @@ class ProjectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Project $project)
     {
-        //
+        Storage::delete($project->image);
+        $project->delete();
+        return Redirect::back();
     }
 }
