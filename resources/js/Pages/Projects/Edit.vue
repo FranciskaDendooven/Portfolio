@@ -57,24 +57,25 @@
                                     {{skill.name}}
                                 </option>
                             </select>
+                            <InputError class="mt-2" :message="$page.props.errors.skill_id" />
                         </div>
 
                         <div>
                             <InputLabel for="name" value="Name" />
-                            <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="username" />
-                            <InputError class="mt-2" :message="form.errors.name" />
+                            <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" autofocus autocomplete="username" />
+                            <InputError class="mt-2" :message="$page.props.errors.name" />
                         </div>
 
                         <div>
                             <InputLabel for="project_url" value="URL" />
                             <TextInput id="project_url" type="text" class="mt-1 block w-full" v-model="form.project_url" autocomplete="project_url" />
-                            <InputError class="mt-2" :message="form.errors.project_url" />
+                            <InputError class="mt-2" :message="$page.props.errors.project_url" />
                         </div>
 
                         <div class="mt-2">
                             <InputLabel for="image" value="Image" />
                             <TextInput id="image" type="file" class="mt-1 block w-full" @input="form.image = $event.target.files[0]" />
-                            <InputError class="mt-2" :message="form.errors.image" />
+                            <InputError class="mt-2" :message="$page.props.errors.image" />
                         </div>
 
                         <div class="flex items-center justify-end mt-4">

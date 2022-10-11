@@ -42,14 +42,14 @@
                     <form class="p-4" @submit.prevent="submit">
                         <div>
                             <InputLabel for="name" value="Name" />
-                            <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="username" />
-                            <InputError class="mt-2" :message="form.errors.name" />
+                            <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" autofocus autocomplete="username" />
+                            <InputError class="mt-2" :message="$page.props.errors.name" />
                         </div>
 
                         <div class="mt-2">
                             <InputLabel for="image" value="Image" />
                             <TextInput id="image" type="file" class="mt-1 block w-full" @input="form.image = $event.target.files[0]" />
-                            <InputError class="mt-2" :message="form.errors.image" />
+                            <InputError class="mt-2" :message="$page.props.errors.image" />
                         </div>
 
                         <div class="flex items-center justify-end mt-4">
