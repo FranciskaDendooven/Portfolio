@@ -1,47 +1,37 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
 
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-        './resources/js/**/*.vue',
+        "./resources/**/*.blade.php",
+        "./resources/**/*.vue",
+        "./resources/**/*.js",
     ],
 
     theme: {
-        extend: {
-            fontFamily: {
-                primary: "Inter",
-                body: "Inter",
+        darkMode: 'class',
+        hover: 'class',
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          }, fontFamily: {
+            body: ['Inter', 'sans-serif'],
             },
-            container: {
-                padding: {
-                    DEFAULT: "1rem",
-                    lg: "3rem",
-                },
-            extend: {
-                colors: {
-                    "light-primary" : "#EEEEEE",
-                    "light-secondary" : "#32E0C4",
-                    "light-tail-100" : "#0D7377",
-                    "light-tail-500" : "#212121",
-                    "dark-primary" : "#EEEEEE",
-                    "dark-secondary" : "#32E0C4",
-                    "dark-tail-100" : "#393E46",
-                    "dark-tail-500" : "#222831",
-                    accent: {
-                        DEFAULT: "#FFE8FC",
-                        hover:"#FFDDED",
-                    },
-                    paragraph: "#95ADCF",
-                },
-            },
-            },
-        },
-    },
+            colors: {
+                lightBeige : '#EEEEEE',
+                lightGreen : '#32E0C4',
+                lightDarkGreen : '#0D7377',
+                lightBlack : '#212121',
+                darkBeige : '#EEEEEE',
+                darkGreen : '#32E0C4',
+                darkGrayBlue : '#393E46',
+                darkBlack : '#222831',
 
+            }
+    },
     plugins: [require('@tailwindcss/forms')],
 };
