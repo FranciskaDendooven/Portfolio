@@ -11,13 +11,11 @@ module.exports = {
     ],
 
     theme: {
-        darkMode: 'class',
-        hover: 'class',
         screens: {
-            sm: '480px',
-            md: '768px',
-            lg: '976px',
-            xl: '1440px',
+            sm: ['min-[480px]', 'max-[768px]'],
+            md: ['min-[768px]', 'max-[976px]'],
+            lg: ['min-[976px]', 'max-[1440px]'],
+            xl: ['min-[1440px]', 'max-[2000px]'],
           }, fontFamily: {
             body: ['Inter', 'sans-serif'],
             },
