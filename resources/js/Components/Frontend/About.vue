@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
 
-<section id="about" class="relative pt-16 bg-lightBeige">
+<section id="about" class="relative pt-16 pb-10 bg-lightBeige">
 <div class="container mx-auto">
   <div class="flex flex-wrap items-center">
     <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">

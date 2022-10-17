@@ -8,8 +8,8 @@ import Footer from '@/Components/Frontend/Footer.vue';
     <div class="dark">
     <div class="bg-lightBlack text-lightBeige">
         <!--header-->
-        <Header></Header>
-        <main class="min-h-screen">
+        <Header class="sticky top-0 z-50"></Header>
+        <main class="relative min-h-screen">
             <slot/>
         </main>
 
