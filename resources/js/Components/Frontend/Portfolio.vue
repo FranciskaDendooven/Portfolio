@@ -7,13 +7,23 @@
 <!-- This is an example component -->
 <div class="max-w-2xl mx-auto">
 
-<div id="default-carousel" class="relative" data-carousel="static">
+<div id="default-carousel" class="relative" data-carousel="cycle">
     <!-- Carousel wrapper -->
     <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-            <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+
+            <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-purple-900">Graphic Design</h3>
+                    <p class="mb-6">Obcaecati, quam? Eligendi, nulla numquam natus laborum porro at cum, consectetur ullam tempora ipsa iste officia sed officiis! Incidunt ea animi officiis.</p>
+                    <a href="#" class="block font-medium text-purple-600">Know more</a>
+                </div>
+                <img src="https://tailus.io/sources/blocks/end-image/preview/images/graphic.svg" class="w-2/3 ml-auto -mb-12" alt="illustration" loading="lazy" width="900" height="600">
+            </div>
+
+
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>

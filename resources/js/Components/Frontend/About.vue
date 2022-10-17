@@ -8,15 +8,15 @@
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
 
-<section id="about" class="relative pt-16 bg-blueGray-50">
+<section id="about" class="relative pt-16 bg-lightBeige">
 <div class="container mx-auto">
   <div class="flex flex-wrap items-center">
     <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
-      <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-500">
+      <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-lightDarkGreen">
         <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg">
         <blockquote class="relative p-8 mb-4">
           <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
-            <polygon points="-30,95 583,95 583,65" class="text-pink-500 fill-current"></polygon>
+            <polygon points="-30,95 583,95 583,65" class="text-lightDarkGreen fill-current"></polygon>
           </svg>
           <h4 class="text-xl font-bold text-white">
             Great for your awesome project
@@ -90,16 +90,5 @@
     </div>
   </div>
 </div>
-<footer class="relative bg-blueGray-50 pt-8 pb-6 mt-2">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-      <div class="w-full md:w-6/12 px-4 mx-auto text-center">
-        <div class="text-sm text-blueGray-500 font-semibold py-1">
-          Made with <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">Notus JS</a> by <a href="https://www.creative-tim.com" class="text-blueGray-500 hover:text-blueGray-800" target="_blank"> Creative Tim</a>.
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 </section>
 </template>

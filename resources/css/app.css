@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 
+#profile-picture{
+    clip-path:circle(50%);
+}
+
 /* @layer base{
     body{
         @apply lightGreen;
     }
-} */
+} */ 
 
 /* #app{ lightGreen;
 } */

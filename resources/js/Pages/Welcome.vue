@@ -9,7 +9,9 @@ import About from '../Components/Frontend/About.vue';
 </script>
 
 <template>
-    <Head title="Ciska's Portfolio" />
+    <Head title="Ciska's Portfolio"
+    link rel="icon" href="<%= BASE_URL %>favicon.ico"/>
+
 <Frontend>
     <!-- Hero primary -->
     <Hero></Hero>

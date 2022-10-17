@@ -18,7 +18,7 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">
-                    <img src="../../../../public/images/Img_Portfolio/ProfilePicCoverImg/IMG_6355_Web.jpg" class="w-[50%] h-auto rounded-full opacity-50 hover:opacity-100" alt="">
+                    <img id="profile-picture" src="../../../../public/images/Img_Portfolio/ProfilePicCoverImg/IMG_6355_Web.jpg" class="w-[50%] h-auto opacity-50 hover:opacity-100" alt="">
                 </div>
             </div>
         </div>
