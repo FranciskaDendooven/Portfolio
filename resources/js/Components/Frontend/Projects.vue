@@ -1,25 +1,53 @@
 <script setup>
 import Project from '@/Components/Frontend/Project.vue';
+import {ref} from 'vue';
 
-defineProps({
+
+const props = defineProps({
     skills: Object,
     projects: Object,
-})
+});
+
+const filteredProjects = ref(props.projects.data);
+
+const selectedSkill = ref("all");
+
+const filterProjects = (id) => {
+    if(id === "all"){
+        filteredProjects.value = props.projects.data
+        selectedSkill.value = id;
+    } else {
+        filteredProjects.value = props.projects.data.filter(project => {
+            return project.skill.id === id;
+        });
+        selectedSkill.value = id;
+    }
+};
 
 </script>
 
 <template>
     <div class="container mx-auto">
-        <nav class="section mb-12 border-b-2 border-lightBeige">
+        <nav class="section border-lightBeige mb-12">
             
             <ul class="flex flex-row sm:flex-col justify-evenly items-center">
                 <li class="cursor-pointer capitalize m-4">
-                    <button type="" class="flex text-center px-4 py-2 hover:text-lightDarkGreen">
+                    <button
+                    @click="filterProjects('all')"
+                     type="" 
+                     class="flex text-center px-4 py-2 border-lightBeige hover:text-lightDarkGreen"
+                     :class="[selectedSkill === 'all' ? 'text-lightGreen' : '']"
+                     >
                         All
                     </button>
                 </li>
                 <li class="cursor-pointer capitalize m-4" v-for="projectSkill in skills.data" :key="projectSkill.id">
-                    <button type="" class="flex text-center px-4 py-2 hover:text-lightBeige">
+                    <button
+                    @click="filterProjects(projectSkill.id)"
+                     type=""
+                     class="flex text-center px-4 py-2 hover:text-lightGreen"
+                     :class="[selectedSkill == projectSkill.id ? 'text-lightGreen' : '']"
+                     >
                         {{projectSkill.name}}
                     </button>
                 </li>
@@ -28,7 +56,7 @@ defineProps({
         </nav>
 
         <section class="flex flex-row">
-            <Project v-for="project in projects.data" :key="project.id" :project="project"></Project>
+            <Project v-for="project in filteredProjects" :key="project.id" :project="project"></Project>
         </section>
     </div>
 </template>

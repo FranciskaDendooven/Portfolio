@@ -6,7 +6,7 @@ import Footer from '@/Components/Frontend/Footer.vue';
 
 <template>
     <div class="dark">
-    <div class="bg-lightBlack text-lightBeige">
+    <div class="bg-darkGrayBlue text-lightBeige">
         <!--header-->
         <Header class="sticky top-0 z-50"></Header>
         <main class="relative min-h-screen">
