@@ -12,7 +12,7 @@ defineProps({
 
 
     <!-- component -->
-<div id="portfolio" class="section bg-darkGrayBlue mx-auto">  
+<div id="portfolio" class="section flex flex-col bg-darkGrayBlue mx-auto">  
     <div class="container mx-auto px-6 text-gray-500">
         <div class="mx-auto grid gap-6 sm:w-3/4 md:w-full md:grid-cols-3">
             <div class="flex flex-col items-center text-center bg-white rounded-2xl shadow-xl px-8 py-12">

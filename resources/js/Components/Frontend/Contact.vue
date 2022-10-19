@@ -3,73 +3,87 @@
 </script>
 
 <template>
-    <section class="section bg-lightBlack">
-        <div class="container mx-auto">
-            <div class="flex flex-col items-center text-center">
-                <h4 class="section-title">Contact</h4>
-                <p class="subtitle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi fugiat cupiditate quisquam omnis sit, consequatur minus illum ipsum natus saepe id officiis perferendis facere, ipsa, in delectus neque eius!
-                </p>
-            </div>
-            <div class="flex flex-col lg:flex-row lg:gap-x-8">
-                <div class="flex flex-1 flex-row items-start space-y-8 mb-12 sm:flex-col lg:mb-0 lg:pt-2">
-                    <div class="flex flex-row sm:flex-col lg:flex-row gap-x-4">
-                        <div class="rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                            </svg>
-                        </div>
-                        <div class="">
-                            <h4 class="font-body text-xl mb-1">
-                                Have a question?
-                            </h4>
-                            <p class="mb-1 text-lightGreen">
-                                I am here to help you
-                            </p>
-                            <p class="font-normal">
-                                E-mail me at JaneDoe@example.com
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row sm:flex-col lg:flex-row gap-x-4">
-                        <div class="rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                            </svg>
+<section id="about" class="relative pt-16 pb-10 bg-lightBeige">
+<div class="container mx-auto">
+  <div class="flex flex-wrap items-center">
+    <div class="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-78">
+      <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-lightDarkGreen">
+        <img alt="..." src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" class="w-full align-middle rounded-t-lg">
+        <blockquote class="relative p-8 mb-4">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
+            <polygon points="-30,95 583,95 583,65" class="text-lightDarkGreen fill-current"></polygon>
+          </svg>
+          <h4 class="text-xl font-bold text-white">
+            Great for your awesome project
+          </h4>
+          <p class="text-md font-light mt-2 text-white">
+            Putting together a page has never been easier than matching
+            together pre-made components. From landing pages presentation
+            to login areas, you can easily customise and built your pages.
+          </p>
+        </blockquote>
+      </div>
+    </div>
 
-                        </div>
-                        <div class="">
-                            <h4 class="font-body text-xl mb-1">
-                                Location
-                            </h4>
-                            <p class="mb-1 text-lightGreen">
-                                Ghent, Belgium
-                            </p>
-                            <p class="font-normal">
-                                Serving clients worldwide
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <form class="space-y-8 w-full wax-w-md">
-                    <div class="flex gap-8">
-                        <div>
-                            <input type="text" name="input" value="Your Name"/>
-                            <span class="text-sm m-2 font-bold">Error</span>
-                        </div>
-                        <div>
-                            <input type="email" name="input" value="Your Email"/>
-                            <span class="text-sm m-2 font-bold">Error</span>
-                        </div>
-                        <textarea class="textarea" rows="" cols="" value="Your Message" spellcheck="false"></textarea>
-                        <span class="text-sm m-2 font-bold">Error</span>
-                        <button class="bg-lightGreen text-lightDarkGreen hover:bg-LightDarkGreen hover:text-lightBeige" type="">
-                            Message
-                        </button>
-                    </div>
-                </form>
+    <div class="w-full md:w-6/12 px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-6/12 px-4">
+          <div class="relative flex flex-col mt-4">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-sitemap"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">CSS Components</h6>
+              <p class="mb-4 text-blueGray-500">
+                Notus JS comes with a huge number of Fully Coded CSS
+                components.
+              </p>
             </div>
+          </div>
+          <div class="relative flex flex-col min-w-0">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-drafting-compass"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">
+                JavaScript Components
+              </h6>
+              <p class="mb-4 text-blueGray-500">
+                We also feature many dynamic components for React, NextJS,
+                Vue and Angular.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="w-full md:w-6/12 px-4">
+          <div class="relative flex flex-col min-w-0 mt-4">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Pages</h6>
+              <p class="mb-4 text-blueGray-500">
+                This extension also comes with 3 sample pages. They are
+                fully coded so you can start working instantly.
+              </p>
+            </div>
+          </div>
+          <div class="relative flex flex-col min-w-0">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <h6 class="text-xl mb-1 font-semibold">Documentation</h6>
+              <p class="mb-4 text-blueGray-500">
+                Built by developers for developers. You will love how easy
+                is to to work with Notus JS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 </template>
