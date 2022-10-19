@@ -2,10 +2,11 @@
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Frontend from '@/Layouts/Frontend.vue';
 import Hero from '@/Components/Frontend/Hero.vue';
-import Portfolio from '../Components/Frontend/Portfolio.vue';
-import Promote from '../Components/Frontend/Promote.vue';
-import About from '../Components/Frontend/About.vue';
-import Skills from '../Components/Frontend/Skills.vue';
+import Portfolio from '@/Components/Frontend/Portfolio.vue';
+import Promote from '@/Components/Frontend/Promote.vue';
+import About from '@/Components/Frontend/About.vue';
+import Skills from '@/Components/Frontend/Skills.vue';
+import Contact from '@/Components/Frontend/Contact.vue';
 
 defineProps({
     skills: Object,
@@ -29,7 +30,7 @@ defineProps({
     <Skills :skills="skills"></Skills>
     <!-- Portfolio primary -->
     <Portfolio :skills="skills" :projects="projects"></Portfolio>
-    <!-- Services? -->
     <!-- Contact primary -->
+    <Contact></Contact>
 </Frontend>
 </template>

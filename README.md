@@ -39,6 +39,7 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 - (https://merakiui.com/).
 - (https://www.tailwind-kit.com/).
 - (https://tailgrids.com/).
+- (https://heroicons.com/).
 
 
 ## Laravel Sponsors
