@@ -29,14 +29,14 @@ const filterProjects = (id) => {
 <template>
  
     <div class="container mx-auto">
-        <nav class="section border-lightBeige mb-12">
+        <nav class="border-b-2 border-lightBeige mb-12 text-lightBlack">
             
-            <ul class="flex flex-col justify-between items-center mx-auto">
+            <ul class="flex flex-col md:flex-row lg:flex-row justify-evenly items-center">
                 <li class="cursor-pointer capitalize m-4">
                     <button
                     @click="filterProjects('all')"
                      type="" 
-                     class="flex text-center px-4 py-2 border-lightBeige hover:text-lightDarkGreen"
+                     class="flex text-center px-4 py-2 text-lightBlack hover:text-lightDarkGreen"
                      :class="[selectedSkill === 'all' ? 'text-lightGreen' : '']"
                      >
                         All
@@ -46,7 +46,7 @@ const filterProjects = (id) => {
                     <button
                     @click="filterProjects(projectSkill.id)"
                      type=""
-                     class="text-center px-4 py-2 hover:text-lightGreen"
+                     class="flex text-center px-4 py-2 text-lightBlack hover:text-lightGreen"
                      :class="[selectedSkill == projectSkill.id ? 'text-lightGreen' : '']"
                      >
                         {{projectSkill.name}}
@@ -56,7 +56,7 @@ const filterProjects = (id) => {
 
         </nav>
 
-        <section class="flex flex-row">
+        <section class="grid grid-rows-2 grid-cols-3 gap-y-12 lg:grid-cols-3 lg:gap-8">
             <Project v-for="project in filteredProjects" :key="project.id" :project="project"></Project>
         </section>
     </div>

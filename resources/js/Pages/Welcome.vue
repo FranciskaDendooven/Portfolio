@@ -30,7 +30,7 @@ defineProps({
     <Skills :skills="skills"></Skills>
     <!-- Portfolio primary -->
     <Portfolio :skills="skills" :projects="projects"></Portfolio>
-    <!-- Contact primary -->
-    <Contact></Contact>
+    <!-- Test Area with Contact Component -->
+    <!-- <Contact :skills="skills" :projects="projects"></Contact> -->
 </Frontend>
 </template>
