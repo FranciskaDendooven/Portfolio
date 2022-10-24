@@ -12,7 +12,7 @@ module.exports = {
 
     theme: {
         screens: {
-            sm: ['min-[480px]', 'max-[768px]'],
+            sm: ['min-[320px]', 'max-[768px]'],
             md: ['min-[768px]', 'max-[976px]'],
             lg: ['min-[976px]', 'max-[1440px]'],
             xl: ['min-[1440px]', 'max-[2000px]'],

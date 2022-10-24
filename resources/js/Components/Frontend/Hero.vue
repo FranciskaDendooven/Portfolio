@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section id="home" class="flex flex-wrap items-center bg-lightBlack lg:py-0 overflow-hidden">
+    <section id="home" class="flex flex-wrap bg-lightBlack items-center lg:py-0 overflow-hidden">
         <div class="container pb-12 mx-auto h-full">
             <div class="flex flex-col md:flex-row px-32 mx-auto h-full pt-8">
                 <div class="flex-1 flex flex-col items-center lg:items-start">
@@ -18,7 +18,7 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">
-                    <img id="profile-picture" src="../../../../public/images/Img_Portfolio/ProfilePicCoverImg/IMG_6355_Web.jpg" class="w-[50%] h-auto opacity-50 hover:opacity-100" alt="">
+                    <img id="profile-picture" src="../../../../public/images/Img_Portfolio/ProfilePicCoverImg/IMG_6355_Web.jpg" class="w-[50%] h-auto opacity-70 hover:opacity-100" alt="">
                 </div>
             </div>
         </div>

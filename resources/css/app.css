@@ -6,6 +6,13 @@
   clip-path: circle(40%);
 }
 
+/* #home{
+  background-image: url(../../public/images/Img_Portfolio/ProfilePicCoverImg/bg_blue_web.jpg);
+  background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} */
+
 .carousel {
   position: relative;
   background-color:#393E46;
