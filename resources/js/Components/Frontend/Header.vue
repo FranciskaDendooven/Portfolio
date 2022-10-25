@@ -5,7 +5,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 </script>
 
 <template>
-    <div class="">
+    <div class="text-lightBlack">
                 
         <nav class="bg-lightGreen px-12 sm:px-4 dark:bg-darkGreen">
         <div class="flex flex-wrap justify-between items-center mx-auto">
