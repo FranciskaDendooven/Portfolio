@@ -31,6 +31,6 @@ defineProps({
     <!-- Portfolio primary -->
     <Portfolio :skills="skills" :projects="projects"></Portfolio>
     <!-- Test Area with Contact Component -->
-    <!-- <Contact :skills="skills" :projects="projects"></Contact> -->
+    <Contact></Contact>
 </Frontend>
 </template>

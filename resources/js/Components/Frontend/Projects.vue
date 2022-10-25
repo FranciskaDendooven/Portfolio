@@ -56,8 +56,10 @@ const filterProjects = (id) => {
 
         </nav>
 
-        <section class="grid grid-rows-2 grid-cols-3 gap-y-12 lg:grid-cols-3 lg:gap-8 sm:grid-cols-1 sm:gap-2">
-            <Project v-for="project in filteredProjects" :key="project.id" :project="project"></Project>
+        <section class="">
+            <div class="flex flex-wrap justify-center md:flex-2 md:flex-row lg:mb-0 lg:pt-2">
+                <Project v-for="project in filteredProjects" :key="project.id" :project="project"></Project>
+            </div>
         </section>
     </div>
 </template>
