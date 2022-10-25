@@ -53,7 +53,6 @@ const filterProjects = (id) => {
                     </button>
                 </li>
             </ul>
-
         </nav>
 
         <section class="">

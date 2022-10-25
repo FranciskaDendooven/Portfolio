@@ -117,3 +117,20 @@ background-size: cover;
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
   color: #0D7377;
 }
+
+.icon-mail{
+  padding-top: 2.5em;
+}
+
+.contact-mail{
+  padding-top: 3em;
+}
+
+.icon-location{
+  padding-top: .5em;
+}
+
+.contact-location{
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
