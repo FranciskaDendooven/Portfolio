@@ -7,11 +7,11 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 <template>
     
     <div class="text-lightBlack">
-        <nav class="font-medium bg-lightGreen px-12 sm:px-4 dark:bg-darkGreen">
+        <nav class="font-medium bg-lightGreen px-32 sm:px-4 dark:bg-darkGreen">
         <div class="flex flex-wrap justify-between items-center mx-auto">
             <a href="" class="flex items-center">
                 <ApplicationLogo></ApplicationLogo>
-                <span class="self-center text-xl font-bold font-semibold whitespace-nowrap dark:text-white">Ciska's portfolio</span>
+                <span class="self-center text-xl font-bold font-semibold whitespace-nowrap dark:text-white">FD</span>
             </a>
             <button
             @click="showMobileMenu = !showMobileMenu"
@@ -30,7 +30,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
                 <a href="#about" class="block py-2 pr-4 pl-3 text-darkGrayBlue bg-lightDarkGreen-700 hover:bg-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"></a>
                 </li>
                 <li class="rounded mb-1">
-                <a href="#promote" class="block py-2 pr-4 pl-3 text-darkGrayBlue bg-lightDarkGreen-700 hover:bg-gray-100 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About & Skills</a>
+                <a href="#about" class="block py-2 pr-4 pl-3 text-darkGrayBlue bg-lightDarkGreen-700 hover:bg-gray-100 rounded  md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About & Skills</a>
                 </li>
                 <li class="rounded mb-1">
                 <a href="#portfolio" class="block py-2 pr-4 pl-3 text-darkGrayBlue bg-lightDarkGreen-700 hover:bg-gray-100 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>

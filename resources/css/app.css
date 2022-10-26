@@ -7,12 +7,6 @@
   clip-path: circle(40%);
 }
 
-/* #navbar-default{
-  position: -webkit-sticky;
-  top:0;
-  scroll-padding-top: 1em;
-} */
-
 #skills-popout{
   border-radius: 1.5rem;
     transition: 0.3s;
@@ -132,11 +126,11 @@
   color: #0D7377;
 }
 
-.icon-mail{
-  padding-top: 2.5em;
+.contact{
+  padding-top: 2em;
 }
 
-.contact-mail{
+/* .contact-mail{
   padding-top: 3em;
 }
 
@@ -147,4 +141,4 @@
 .contact-location{
   padding-top: 1em;
   padding-bottom: 3em;
-}
+} */
