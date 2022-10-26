@@ -5,10 +5,10 @@ import Footer from '@/Components/Frontend/Footer.vue';
 </script>
 
 <template>
-    <div class="dark">
+    <div class="">
     <div class="bg-darkGrayBlue text-lightBeige">
         <!--header-->
-        <Header class="sticky top-0 z-50"></Header>
+            <Header class="sticky top-0 z-50"></Header>
         <main class="relative min-h-screen">
             <slot/>
         </main>

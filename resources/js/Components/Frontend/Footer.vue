@@ -12,7 +12,7 @@ import Contact from './Contact.vue';
                 <div class=" flex space-x-6 items-center justify-center">
                 <ApplicationLogo/>
                 </div>
-                <p class="text-lightBlack opacity-80 text-[12px]">
+                <p class="text-lightBlack text-[12px]">
                     &copy;2022 Ciska.com All Rights Reserved.
                 </p>
             </div>

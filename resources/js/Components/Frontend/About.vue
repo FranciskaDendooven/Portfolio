@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
 <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
+<div class="page">
+  
 
 <section id="about" class="relative pt-16 pb-10 bg-lightBeige">
 <div class="container mx-auto">
@@ -91,4 +93,5 @@
   </div>
 </div>
 </section>
+</div>
 </template>

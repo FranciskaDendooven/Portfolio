@@ -1,20 +1,24 @@
 <script setup>
 
+
 </script>
 
 <template>
+    <div class="page">
+  
+
     <section id="home" class="flex flex-wrap bg-lightBlack items-center lg:py-0 overflow-hidden">
         <div class="container pb-12 mx-auto h-full">
             <div class="flex flex-col md:flex-row px-32 mx-auto h-full pt-8">
-                <div class="flex-1 flex flex-col items-center lg:items-start">
-                    <p class="text-lg text-md mb-[22px]">Hi, I'm Ciska</p>
-                    <h1 class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
-                        I am a web developer
+                <div class="flex-1 flex flex-col items-center lg:items-start"> 
+                    <h1 id="animated-text" class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+                        
+                        Franciska <br> Dendooven
                     </h1>
                     <p class="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">Design reinvent cultivate rss-capable front-end models convergence, integrate ubiquitous dot-com 24/365 drive deploy incubate; empower.” Wireless e-markets web-enabled widgets communities networkeffects models next-generation, optimize front-end real-time rich-clientAPIs.” Eyeballs, “podcasting long-tail applications,” markets platforms communities viral engage target.
                     </p>
                     <button type="" class="btn btn-md bg-lightGreen text-lightBlack font-bold py-1 px-2 rounded-full hover:bg-lightDarkGreen hover:text-lightBeige md:btn-lg transition-all">
-                        Push me
+                        <a href="#about">Push Me</a>
                     </button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">
@@ -23,4 +27,5 @@
             </div>
         </div>
     </section>
+</div>
 </template>

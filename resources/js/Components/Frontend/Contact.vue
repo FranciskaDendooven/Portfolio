@@ -1,5 +1,6 @@
 <script setup>
 import Projects from '@/Components/Frontend/Projects.vue';
+import { Link } from '@inertiajs/inertia-vue3';
 
 defineProps({
   skills: Object,
@@ -8,12 +9,13 @@ defineProps({
 </script>
 
 <template>
-<section class="bg-lightBlack text-lightBeige">
+<section id="contact" class="bg-lightBlack text-lightBeige">
   <div class="container mx-auto">
       <div class="flex flex-col items-center text-center mb-6 pt-6">
-          <h4 class="section-title">Contact</h4>
-          <p class="subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi fugiat cupiditate quisquam omnis sit, consequatur minus illum ipsum natus saepe id officiis perferendis facere, ipsa, in delectus neque eius!
+          <h2 class="font-body font-bold text-xl">Contact</h2>
+          <p class="font-body text-sm text-lightBeige opacity-75">
+              Feel free to contact me for questions, proposals, co-op's.<br>Looking forward to meeting you!
+              <br>See below for more information.
           </p>
       </div>
       <div class="container flex flex-col lg:flex-row lg:gap-x-8">
@@ -34,7 +36,8 @@ defineProps({
                       I am here to help you
                   </p>
                   <p class="font-normal">
-                      E-mail me at JaneDoe@example.com
+                      E-mail me at 
+                     <Link href="mail_to">JaneDoe@example.com</Link>
                   </p>
               </div>
           </div>
@@ -59,7 +62,7 @@ defineProps({
                   </p>
               </div>
           </div>
-          <div class="flex flex-row sm:flex-col lg:flex-row gap-x-4">
+          <!-- <div class="flex flex-row sm:flex-col lg:flex-row gap-x-4">
               <div class="icon-location">
                 <div class="rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -78,9 +81,14 @@ defineProps({
                       Serving clients worldwide
                   </p>
               </div>
-          </div>
+          </div> -->
         </div>
     </div>
   </div>   
+  <div class="flex-1 flex flex-col items-center pb-6 lg:items-start">
+    <button type="" class="btn btn-md bg-lightGreen text-lightBlack font-bold py-1 pb-1 px-2 rounded-full hover:bg-lightDarkGreen hover:text-lightBeige md:btn-lg transition-all">
+        <a href="#navbar-default">Home</a>
+    </button>
+  </div>
 </section>
 </template>
