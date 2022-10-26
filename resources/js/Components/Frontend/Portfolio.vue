@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="container mx-auto py-3 bg-lightDarkGreen">
+  <div class="mx-auto py-3 bg-lightDarkGreen">
       <div class="flex flex-col items-center text-center">
         <h2 class="section-title text-lightBeige font-bold">My latest work</h2>
         <p class="subtitle text-lightBeige">

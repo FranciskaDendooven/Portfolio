@@ -21,6 +21,7 @@
         "vue": "^3.2.31"
     },
     "dependencies": {
+        "normalize.css": "^8.0.1",
         "vue-owl-carousel": "^2.0.3"
     }
 }
