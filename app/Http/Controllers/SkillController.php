@@ -46,18 +46,16 @@ class SkillController extends Controller
         ]);
 
         if ($request->hasFile('image')){
-            $image = $request->file('image');       
-            $imageName = time() . '.' . $image->extension(); 
-                    
-            // 1) Store in Storage folder -- (Path => storage/app/images/file.png)
-            $image->storeAs('app/public/images/skills/', $imageName);
+            $image = $request->image;
 
-            // 2) Store in Public Folder -- (Path => public/images/file.png)
-            $image->move(public_path('images/skills/'), $imageName);
+            $image_path = 'images/skills/';
+            $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension(); 
+
+            $image->storeAs($image_path, $image_name);
             
             Skill::create([
                 'name' => $request->name,
-                'image' => 'app/public/images/skills/' . $imageName,
+                'image' => $image_path . $image_name,
             ]);
 
             return Redirect::route('skills.index')->with('message', 'Skill created successfully!');
@@ -94,12 +92,17 @@ class SkillController extends Controller
 
         if($request->hasFile('image')){
             Storage::delete($skill->image);
-            $image = $request->file('image')->store('/app/public/skills');
+            $image = $request->image;
+
+            $image_path = 'images/skills/';
+            $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension(); 
+
+            $image->storeAs($image_path, $image_name);
         }
 
         $skill->update([
             'name' => $request->name,
-            'image' => $image
+            'image' => $image_path . $image_name,
         ]);
 
         return Redirect::route('skills.index')->with('message', 'Skill updated successfully!');

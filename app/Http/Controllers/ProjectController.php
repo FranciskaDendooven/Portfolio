@@ -50,11 +50,17 @@ class ProjectController extends Controller
         ]);
 
         if ($request->hasFile('image')){
-            $image = $request->file('image')->store('projects');
+            $image = $request->image;
+
+            $image_path = 'images/projects/';
+            $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension();
+            
+            $image->storeAs($image_path, $image_name);
+
             Project::create([
                 'skill_id' => $request->skill_id,
                 'name' => $request->name,
-                'image' => $image,
+                'image' => $image_path . $image_name,
                 'project_url' => $request->project_url,
             ]);
 
@@ -94,14 +100,19 @@ class ProjectController extends Controller
 
         if($request->hasfile('image')){
             Storage::delete($project->image);
-            $image = $request->file('image')->store('projects');
+            $image = $request->image;
+
+            $image_path = 'images/projects/';
+            $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension();
+            
+            $image->storeAs($image_path, $image_name);
         }
 
         $project->update([
             'skill_id' => $request->skill_id,
             'name' => $request->name,
             'project_url' => $request->project_url,
-            'image' => $image, 
+            'image' => $image_path . $image_name, 
         ]);
         return Redirect::route('projects.index')->with('message', 'Project updated successfully!');
     }

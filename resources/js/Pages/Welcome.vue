@@ -16,7 +16,7 @@ defineProps({
 </script>
 
 <template>
-    <Head title="Ciska's Portfolio"
+    <Head title="Franciska Dendooven"
     link rel="icon" href="<%= BASE_URL %>favicon.ico"/>
 
 <Frontend>

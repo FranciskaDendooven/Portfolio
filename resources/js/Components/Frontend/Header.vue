@@ -11,7 +11,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
         <div class="flex flex-wrap justify-between items-center mx-auto">
             <a href="" class="flex items-center">
                 <ApplicationLogo></ApplicationLogo>
-                <span class="self-center text-xl font-bold font-semibold whitespace-nowrap dark:text-white">FD</span>
+                <span class="self-center text-xl font-bold font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
             <button
             @click="showMobileMenu = !showMobileMenu"
