@@ -1,19 +1,22 @@
 <script setup>
-
-
+ import TextAnimationName from '@/Components/Frontend/TextAnimationName.vue';
 </script>
 
 <template>
     <div class="page">
-  
 
     <section id="home" class="flex flex-wrap bg-lightBlack items-center lg:py-0 overflow-hidden">
         <div class="container pb-12 mx-auto h-full">
             <div class="flex flex-col px-32 md:flex-row mx-auto h-full pt-8">
                 <div class="flex-1 flex flex-col items-start pt-8 lg:items-start"> 
-                    <h1 id="animated-text" class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
+
+
+                    <TextAnimationName></TextAnimationName>
+
+
+                    <!-- <h1 id="animated-text" class="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]">
                         Franciska <br> Dendooven
-                    </h1>
+                    </h1> -->
                     <p class="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] font-body font-bold text-lg text-center lg:text-left">TRY - FAIL - LEARN - TRY AGAIN
                     </p>
                     <p class="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] font-body text-lg text-center lg:text-left">
@@ -29,5 +32,6 @@
             </div>
         </div>
     </section>
-</div>
+
+    </div>
 </template>

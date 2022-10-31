@@ -17,7 +17,7 @@ module.exports = {
             lg: ['min-[976px]', 'max-[1440px]'],
             xl: ['min-[1440px]', 'max-[2000px]'],
           }, fontFamily: {
-            body: ['Inter', 'sans-serif'],
+            body: ['Poppins', 'sans-serif'],
             },
             colors: {
                 lightBeige : '#EEEEEE',

@@ -1,8 +1,9 @@
 <script setup>
  import {ref} from 'vue';
-import ApplicationLogo from '@/Components/ApplicationLogo.vue';
+ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
  const showMobileMenu = ref("false");
 </script>
+
 
 <template>
     
