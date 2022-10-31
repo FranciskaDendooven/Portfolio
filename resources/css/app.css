@@ -146,6 +146,32 @@
   }
 }
 
+#text-grows-and-stayes-big{
+  animation-name: grow;
+  animation-duration: 5.4s;
+  animation-fill-mode: forwards;
+}
+#lightGreen-text-grows-and-stayes-big{
+  color: #32E0C4;
+}
+
+@keyframes grow{
+  0%{
+    font-size: 0;
+  }
+  100%{
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+#text-grows-and-stayes-big{
+
+}
+
 #skills-popout{
   border-radius: 1.5rem;
     transition: 0.3s;
