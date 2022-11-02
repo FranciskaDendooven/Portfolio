@@ -85,7 +85,7 @@ defineProps({
   </div>   
   <div class="flex-1 flex flex-col items-center pt-8 pb-6 lg:items-start">
     <button type="" class="btn btn-md bg-lightGreen text-lightBlack font-bold py-1 pb-1 px-2 rounded-full hover:bg-lightDarkGreen hover:text-lightBeige md:btn-lg transition-all">
-        <a href="#navbar-default">Home</a>
+        <a href="#home">Home</a>
     </button>
   </div>
 </section>

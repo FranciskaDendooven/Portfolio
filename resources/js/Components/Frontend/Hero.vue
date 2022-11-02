@@ -10,7 +10,7 @@
             <div class="flex flex-col px-32 lg:px-32 md:flex-row mx-auto h-full pt-8">
                 <div class="flex-1 flex flex-col items-start pt-8 lg:items-start"> 
 
-                    <TextAnimationName class="w-full sm:w-[100px]"></TextAnimationName>
+                    <TextAnimationName class="ml-[-4rem] w-full sm:w-[100px]"></TextAnimationName>
 
                     <p id="text-grows-and-stayes-big" class="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] font-body text-sm lg:text-left">TRY - FAIL - LEARN - <b id="lightGreen-text-grows-and-stayes-big">TRY AGAIN</b>
                     </p>
