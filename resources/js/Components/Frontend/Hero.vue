@@ -10,15 +10,15 @@
             <div class="flex flex-col px-32 lg:px-32 md:flex-row mx-auto h-full pt-8">
                 <div class="flex-1 flex flex-col font-[Poppins, sans serif] items-start pt-8 lg:items-start"> 
 
-                    <TextAnimationName class="ml-[-4rem] sm:ml-[4rem] w-full sm:w-1/2"></TextAnimationName>
+                    <TextAnimationName class="ml-[-4rem] w-full "></TextAnimationName>
 
-                    <p id="text-grows-and-stayes-big" class="pt-4 pb-4 md:pt-6 md:pb-12 max-w-[480px] lg:text-left">TRY - FAIL - LEARN - <b id="lightGreen-text-grows-and-stayes-big">TRY AGAIN</b>
+                    <p id="text-grows-and-stayes-big" class="pt-4 pb-4 max-w-[480px] lg:text-left">TRY - FAIL - LEARN - <b id="lightGreen-text-grows-and-stayes-big">REPEAT</b>
                     </p>
-                    <p class="pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg lg:text-left">
+                    <p class="pb-8 w-full text-lg lg:text-left">
                     Want to know more? Check out About & Skills by clicking the button below.
                     </p>
                     <button type="" class="btn btn-md bg-lightGreen text-lightBlack font-bold py-1 pb-.5 px-2 rounded-full hover:bg-lightDarkGreen hover:text-lightBeige md:btn-lg transition-all">
-                        <a href="#about">Push Me</a>
+                        <a href="#about">Push Me (to the limits)</a>
                     </button>
                 </div>
                 <div class="hidden lg:flex flex-1 justify-end items-end h-full">

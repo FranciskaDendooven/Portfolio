@@ -54,7 +54,7 @@ defineProps({
                   </p>
                   <p class="text-sm">
                       E-mail me at 
-                      <a href="mailto:franciska.dendooven@gmail.com">franciska.dendooven@gmail.com</a>
+                      <a href="mailto:franciska.dendooven@gmail.com">franciska.dendooven<span>⨁</span>gmail.com</a>
                   </p>
               </div>
           </div>
