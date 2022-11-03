@@ -164,14 +164,6 @@
   }
 }
 
-
-
-
-
-#text-grows-and-stayes-big{
-
-}
-
 #skills-popout{
   border-radius: 1.5rem;
     transition: 0.3s;
@@ -294,16 +286,3 @@
 .contact{
   padding-top: 2em;
 }
-
-/* .contact-mail{
-  padding-top: 3em;
-}
-
-.icon-location{
-  padding-top: .5em;
-}
-
-.contact-location{
-  padding-top: 1em;
-  padding-bottom: 3em;
-} */

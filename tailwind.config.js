@@ -11,15 +11,7 @@ module.exports = {
     ],
 
     theme: {
-        fontFamily: {
-            body: ['Poppins', 'sans-serif'],
-            },
-            screens: {
-                sm: ['min-[100px]', 'max-[768px]'],
-                md: ['min-[768px]', 'max-[976px]'],
-                lg: ['min-[976px]', 'max-[1440px]'],
-                xl: ['min-[1440px]', 'max-[2000px]'],
-              }, 
+        
             colors: {
                 lightBeige : '#EEEEEE',
                 lightGreen : '#32E0C4',
@@ -30,7 +22,16 @@ module.exports = {
                 darkGrayBlue : '#393E46',
                 darkBlack : '#222831',
 
-            }
+            },
+            font: {
+                body: ['Poppins', 'sans-serif'],
+                },
+                screens: {
+                    sm: ['min-[100px]', 'max-[768px]'],
+                    md: ['min-[768px]', 'max-[976px]'],
+                    lg: ['min-[976px]', 'max-[1440px]'],
+                    xl: ['min-[1440px]', 'max-[2000px]'],
+                  }, 
     },
     plugins: [require('@tailwindcss/forms')],
 };
