@@ -6,7 +6,7 @@ defineProps({
 
 <template>
     <div id="skills-popout" class="flex flex-col px-12 mb-6 lg:flex-row md:flex-row justify-evenly items-center">
-        <a :href="project.project_url" class="group text-lightGreen justify-center text-center cursor-pointer">
+        <a :href="project.project_url" target="_blank" class="group text-lightGreen justify-center text-center cursor-pointer">
             <div class="mb-6 ml-8">
                 <img class="rounded-2xl h-44 justify-center" :src="project.image" :alt="project.name">
             </div>

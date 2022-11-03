@@ -17,6 +17,6 @@ defineProps({
       </div>
     </div>
   <section id="portfolio" class="section bg-lightBeige min-h-[750px]">
-    <Projects :skills="skills" :projects="projects"></Projects>
+      <Projects :skills="skills" :projects="projects"></Projects>
   </section>
 </template>

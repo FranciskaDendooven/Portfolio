@@ -13,19 +13,19 @@
         <div class="carousel-inner">
             <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
             <div class="carousel-item flex justify-around shrink">
-                <a href="https://www.figma.com/file/4bcPaoXXpAdLrxNlbIYmhm/Wireframe-Portfolio?node-id=0%3A1">
+                <a href="https://www.figma.com/file/4bcPaoXXpAdLrxNlbIYmhm/Wireframe-Portfolio?node-id=0%3A1" target="_blank">
                     <img src="../../../../public/images/Img_Portfolio/wireframe_mockup.png" alt="Two images. The first image is in Black-Gray-White and represents the wireframe for the portfolio website. The second image is the mockup portfolio website in fluorescent Green, Black, White-Gray and Gray-Blue colors. Use of Figma." >
                 </a>
             </div>
             <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item flex justify-around shrink">
-                <a href="https://app.moqups.com/Ii9LUJ06rOQS2lirSsafTnKjMxPmJvCo/view/page/a5740137f">
+                <a href="https://app.moqups.com/Ii9LUJ06rOQS2lirSsafTnKjMxPmJvCo/view/page/a5740137f" target="_blank">
                     <img src="../../../../public/images/Img_Portfolio/atrium_mockup.png" alt="A mockup of the Atrium project. Colors used are Dark-Blue, Gray-White, Red-Orange, Light-Indigo-Blue. Use of Moqup.">
                 </a>
             </div>
             <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
             <div class="carousel-item flex shrink justify-around">
-                <a href="https://dev.to/ciska/take-a-shorter-route-with-restful-controllers-24lk">
+                <a href="https://dev.to/ciska/take-a-shorter-route-with-restful-controllers-24lk" target="_blank">
                     <img src="../../../../public/images/Img_Portfolio/DevTo-Article.png" alt="Screenshot of a dev.to article. Article is about RESTful Controllers. The screenshot contains a Meme of a chillin' Not cat with a towel around it's head and cucumber slices for his/her eyes.">
                 </a>
             </div>

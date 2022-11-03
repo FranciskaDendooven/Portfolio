@@ -98,11 +98,14 @@ class SkillController extends Controller
             $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension(); 
 
             $image->storeAs($image_path, $image_name);
+
+            $skill->update([
+                'image' => $image_path . $image_name,
+            ]);
         }
 
         $skill->update([
             'name' => $request->name,
-            'image' => $image_path . $image_name,
         ]);
 
         return Redirect::route('skills.index')->with('message', 'Skill updated successfully!');

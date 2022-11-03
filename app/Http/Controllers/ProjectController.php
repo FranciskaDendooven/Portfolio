@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Resources\ProjectResource;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
+use tidy;
 
 class ProjectController extends Controller
 {
@@ -61,7 +62,7 @@ class ProjectController extends Controller
                 'skill_id' => $request->skill_id,
                 'name' => $request->name,
                 'image' => $image_path . $image_name,
-                'project_url' => $request->project_url,
+                'project_url' => $request->project_url->Redirect::away(),
             ]);
 
             return Redirect::route('projects.index')->with('message', 'Project created successfully!');
@@ -106,13 +107,15 @@ class ProjectController extends Controller
             $image_name = time() . '-'  . pathinfo($image,PATHINFO_FILENAME) . '.' . $image->extension();
             
             $image->storeAs($image_path, $image_name);
+            $project->update([
+                'image' => $image_path . $image_name, 
+            ]);
         }
 
         $project->update([
             'skill_id' => $request->skill_id,
             'name' => $request->name,
             'project_url' => $request->project_url,
-            'image' => $image_path . $image_name, 
         ]);
         return Redirect::route('projects.index')->with('message', 'Project updated successfully!');
     }
